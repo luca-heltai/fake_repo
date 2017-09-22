@@ -6,8 +6,9 @@ N_COMMITS_PRE=10
 N_COMMITS=30
 BUG_PROBABILITY=5
 
+# modification
 probability_selector() {
-    return $((RANDOM > RAND_MAX*$(($1+1))/100))
+    return $((RANDOM < RAND_MAX*$(($1+1))/100))
 }
 
 random_user() {
