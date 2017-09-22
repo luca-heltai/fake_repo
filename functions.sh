@@ -6,7 +6,7 @@ N_COMMITS_PRE=10
 N_COMMITS=30
 BUG_PROBABILITY=5
 
-# modification
+# modific
 probability_selector() {
     return $((RANDOM < RAND_MAX*$(($1+1))/100))
 }
